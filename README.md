@@ -3,9 +3,9 @@ Enobong Ndedde Personal Website
 
 # Flutter Responsive Personal Website With GetX
 
-My portfolio Website (https://pwa.miladjalali.ir)
+My portfolio Website 
 
 
-![App Screenshot](https://raw.githubusercontent.com/miladjalalli/Flutter-Personal-Website-With-GetX/main/snapshot.jpg)
+
 
 #getx #flutter_web #pwa #flutter #flutter_responsive
