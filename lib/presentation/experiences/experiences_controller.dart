@@ -26,30 +26,30 @@ class ExperiencesController extends GetxController with GetTickerProviderStateMi
 
   void addExperiences() {
     experiences.add(Experience(
-        companyTitle: "Irisa",
+        companyTitle: "KodeHauz",
         companyLogo: AssetImage("assets/images/irisa.jpg"),
-        startDate: "08/06/2016",
-        endDate: "08/08/2016",
-        jobPosition: "Android Intern",
+        startDate: "09/2019",
+        endDate: "09/2020",
+        jobPosition: "Android Upskill",
         jobType: JobType.internship,
         workplaces: Workplaces.hybrid,
         description: ""));
 
     experiences.add(Experience(
-        companyTitle: "Nicode",
-        companyLogo: AssetImage("assets/images/nicode.jpg"),
-        startDate: "22/05/2018",
-        endDate: "23/10/2019",
+        companyTitle: "Africinnovate",
+        companyLogo: AssetImage("assets/images/irisa.jpg"),
+        startDate: "01/2020",
+        endDate: "01/2021",
         jobPosition: "Android Developer",
         jobType: JobType.fullTime,
         workplaces: Workplaces.onSite,
         description: ""));
 
     experiences.add(Experience(
-        companyTitle: "Nicode",
-        companyLogo: AssetImage("assets/images/nicode.jpg"),
-        startDate: "23/10/2019",
-        endDate: "21/03/2022",
+        companyTitle: "Zijemu LTD",
+        companyLogo:  AssetImage("assets/images/irisa.jpg"),
+        startDate: "10/2021",
+        endDate: "2023",
         jobPosition: "Flutter Developer",
         jobType: JobType.fullTime,
         workplaces: Workplaces.onSite,
@@ -57,24 +57,15 @@ class ExperiencesController extends GetxController with GetTickerProviderStateMi
 
 
     experiences.add(Experience(
-        companyTitle: "Nicode",
-        companyLogo: AssetImage("assets/images/nicode.jpg"),
-        startDate: "21/03/2022",
+        companyTitle: "Ahegel LTD",
+        companyLogo:  AssetImage("assets/images/irisa.jpg"),
+        startDate: "21/03/2023",
         endDate: "Present",
         jobPosition: "Flutter Developer",
-        jobType: JobType.partTime,
+        jobType: JobType.fullTime,
         workplaces: Workplaces.hybrid,
         description: ""));
 
-    experiences.add(Experience(
-        companyTitle: "Uplance",
-        companyLogo: AssetImage("assets/images/uplance.jpg"),
-        startDate: "21/03/2021",
-        endDate: "Present",
-        jobPosition: "Flutter Developer",
-        jobType: JobType.contract,
-        workplaces: Workplaces.remote,
-        description: ""));
 
   }
 }

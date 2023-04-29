@@ -19,7 +19,7 @@ class HeroImage extends StatelessWidget {
         color: Colors.white,
         border: Border.all(color: borderColor, width: 2),
         image: DecorationImage(
-          image: AssetImage('assets/images/me.png'),
+          image:  NetworkImage('https://media.licdn.com/dms/image/C4D03AQH-pOTGHY_13w/profile-displayphoto-shrink_800_800/0/1652014718823?e=1687996800&v=beta&t=6V4SIyowsQL3DXgqoN82oiXH7V02pWEri0OAtT3MWM8'),
         ),
       ),
     );

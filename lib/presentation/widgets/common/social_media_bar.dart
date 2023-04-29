@@ -20,7 +20,7 @@ class SocialMediaBar extends StatelessWidget {
             hoverColor: Colors.transparent,
             splashColor: Colors.transparent,
             onTap: () {
-              UrlHelper.launchUrl('https://github.com/miladjalalli');
+              UrlHelper.launchUrl('https://github.com/Enobong-kingsley');
             },
             child: Icon(
               FontAwesomeIcons.github,
@@ -33,7 +33,7 @@ class SocialMediaBar extends StatelessWidget {
             splashColor: Colors.transparent,
             onTap: () {
               UrlHelper.launchUrl(
-                'https://www.linkedin.com/in/miladjalali1994',
+                'https://www.linkedin.com/in/enobong-ndedde-113b041b1/',
               );
             },
             child: Icon(
@@ -47,7 +47,7 @@ class SocialMediaBar extends StatelessWidget {
             splashColor: Colors.transparent,
             onTap: () {
               UrlHelper.launchUrl(
-                "mailto:miladjalali.dev@gmail.com?subject=Hello%20Milad",
+                "mailto:enobongndedde@gmail.com?subject=Hello%20Milad",
               );
             },
             child: Icon(
@@ -60,7 +60,7 @@ class SocialMediaBar extends StatelessWidget {
             hoverColor: Colors.transparent,
             splashColor: Colors.transparent,
             onTap: () {
-              UrlHelper.launchUrl('https://stackoverflow.com/users/8349963');
+              UrlHelper.launchUrl('https://stackoverflow.com/users/13854153/enobong-ndedde');
             },
             child: Icon(
               FontAwesomeIcons.stackOverflow,
@@ -72,7 +72,7 @@ class SocialMediaBar extends StatelessWidget {
             hoverColor: Colors.transparent,
             splashColor: Colors.transparent,
             onTap: () {
-              UrlHelper.launchUrl('https://www.instagram.com/miladjalali.ir/');
+              UrlHelper.launchUrl('https://www.instagram.com/enobongndedde/');
             },
             child: Icon(
               FontAwesomeIcons.instagram,
@@ -84,7 +84,7 @@ class SocialMediaBar extends StatelessWidget {
             hoverColor: Colors.transparent,
             splashColor: Colors.transparent,
             onTap: () {
-              UrlHelper.launchUrl('https://medium.com/@miladjalali');
+              UrlHelper.launchUrl('https://enobongndedde.medium.com');
             },
             child: Icon(
               FontAwesomeIcons.medium,
@@ -96,7 +96,7 @@ class SocialMediaBar extends StatelessWidget {
             hoverColor: Colors.transparent,
             splashColor: Colors.transparent,
             onTap: () {
-              UrlHelper.launchUrl('https://wa.link/ggxmai');
+              UrlHelper.launchUrl('');
             },
             child: Icon(
               FontAwesomeIcons.whatsapp,

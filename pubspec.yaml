@@ -1,5 +1,5 @@
 name: miladjalali_ir
-description: Milad Jalali Personal Website
+description: Enobong Ndedde Personal Website
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `pub publish`. This is preferred for private packages.
@@ -52,6 +52,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  file: ^6.1.4
 
 dev_dependencies:
   flutter_test:
@@ -71,7 +72,7 @@ flutter:
 
 
   assets:
-    - assets/miladjalali.pdf
+    - assets/mobile_dev_resume.pdf
     - assets/images/
 
   fonts:

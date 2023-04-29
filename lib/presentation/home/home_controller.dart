@@ -18,7 +18,7 @@ class HomeController extends GetxController {
 
   RxInt selectedIndex = 0.obs;
   RxInt navBarSelectedIndex = 0.obs;
-  RxList<Widget> pages = [InformationPage(),AboutPage(),ExperiencesPage(),ProjectsPage(),BlogPage()].obs;
+  RxList<Widget> pages = [InformationPage(),AboutPage(),ExperiencesPage()].obs;
 
   var scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -26,9 +26,7 @@ class HomeController extends GetxController {
   final items = [
     'Home',
     'About',
-    'Experience',
-    'Projects',
-    'Blog',
+    'Inspiration',
     'Resume',
   ];
 
@@ -46,14 +44,8 @@ class HomeController extends GetxController {
         ExperiencesBinding().dependencies();
         Get.changeTheme(Themes.themePurpleOrange);
         break;
-      case 3:
-        ProjectsBinding().dependencies();
-        Get.changeTheme(Themes.themeOrangeOrange);
-        break;
-      case 4:
-        BlogBinding().dependencies();
-        Get.changeTheme(Themes.themeBlackOrange);
-        break;
+     
+     
     }
   }
 

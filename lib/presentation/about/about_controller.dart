@@ -111,16 +111,16 @@ class AboutController extends GetxController with GetTickerProviderStateMixin {
   }
 
   void addMyPhoto() {
-    int position = ((visibleRowsCount / 2).floor() * itemsInEachRow) +
-        Random().nextInt((itemsInEachRow ~/ 2)) +
-        (itemsInEachRow / 2).ceil();
+    int position = ((visibleRowsCount / 5).floor() * itemsInEachRow) +
+        Random().nextInt((itemsInEachRow ~/ 5)) +
+        (itemsInEachRow / 5).ceil();
 
     if (position > images.length) position = Random().nextInt(itemsInEachRow) + itemsInEachRow;
 
     images.insert(
         position,
         UnsplashImage(
-            urls: UnsplashImageUrls(small: "https://pwa.miladjalali.ir/miladjalali.gif"),
+            urls: UnsplashImageUrls(small: "https://media.licdn.com/dms/image/C4D03AQH-pOTGHY_13w/profile-displayphoto-shrink_800_800/0/1652014718823?e=1687996800&v=beta&t=6V4SIyowsQL3DXgqoN82oiXH7V02pWEri0OAtT3MWM8"),
             blurHash: "LPGcGlkWK+w[_Noes8NG.TRjRQt7"));
   }
 }

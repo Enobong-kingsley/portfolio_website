@@ -14,12 +14,12 @@ class UrlHelper {
   }
 
   static Future<void> downloadResume() async {
-    final readValue = await rootBundle.load('assets/miladjalali.pdf');
+    final readValue = await rootBundle.load('assets/mobile_dev_resume.pdf');
 
     // Call the "saveAs" method from the FileSaver.js libray
     js.context.callMethod("saveAs", [
       html.Blob([readValue]),
-      "miladjalali.pdf",
+      "mobile_dev_resume.pdf",
     ]);
   }
 }

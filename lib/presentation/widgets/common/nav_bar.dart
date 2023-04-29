@@ -29,7 +29,7 @@ class Navbar extends GetResponsiveView<HomeController> {
                     backgroundColor: Get.theme.accentColor,
                     radius: 15,
                     child: Text(
-                      'M',
+                      'E',
                       style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
@@ -40,7 +40,7 @@ class Navbar extends GetResponsiveView<HomeController> {
                   RichText(
                     textAlign: TextAlign.center,
                     text: TextSpan(
-                      text: 'Milad',
+                      text: 'Enobong',
                       style: Styles.navBarTextStyle.copyWith(
                         color: (controller.navBarSelectedIndex.value==1 || controller.navBarSelectedIndex.value==2)?Colors.white:Colors.black.withOpacity(0.75),
                         fontSize: 18,
@@ -48,7 +48,7 @@ class Navbar extends GetResponsiveView<HomeController> {
                       ),
                       children: [
                         TextSpan(
-                          text: ' Jalali',
+                          text: ' Ndedde',
                           style: Styles.navBarTextStyle.copyWith(
                             color: Get.theme.accentColor,
                             fontSize: 18,
@@ -147,7 +147,7 @@ class Navbar extends GetResponsiveView<HomeController> {
                   RichText(
                     textAlign: TextAlign.center,
                     text: TextSpan(
-                      text: 'Milad',
+                      text: 'Enobong',
                       style: Styles.navBarTextStyle.copyWith(
                         color: (controller.navBarSelectedIndex.value==1 || controller.navBarSelectedIndex.value==2)?Colors.white:Colors.black.withOpacity(0.75),
                         fontSize: 18,
@@ -155,7 +155,7 @@ class Navbar extends GetResponsiveView<HomeController> {
                       ),
                       children: [
                         TextSpan(
-                          text: ' Jalali',
+                          text: ' Ndedde',
                           style: Styles.navBarTextStyle.copyWith(
                             color: Get.theme.accentColor,
                             fontSize: 18,

@@ -1,25 +1,25 @@
-import 'package:flutter/material.dart';
-import 'dart:html';
-import 'dart:ui' as ui;
+// import 'package:flutter/material.dart';
+// import 'dart:html';
+// import 'dart:ui' as ui;
 
 
-class PostItemWidget extends StatefulWidget {
-  const PostItemWidget({Key? key}) : super(key: key);
+// class PostItemWidget extends StatefulWidget {
+//   const PostItemWidget({Key? key}) : super(key: key);
 
-  @override
-  State<PostItemWidget> createState() => _PostItemWidgetState();
-}
+//   @override
+//   State<PostItemWidget> createState() => _PostItemWidgetState();
+// }
 
-class _PostItemWidgetState extends State<PostItemWidget> {
+// class _PostItemWidgetState extends State<PostItemWidget> {
 
 
-  @override
-  Widget build(BuildContext context) {
-    return Container();
-  }
+//   @override
+//   Widget build(BuildContext context) {
+//     return Container();
+//   }
 
-  @override
-  void initState() {
-    super.initState();
-  }
-}
+//   @override
+//   void initState() {
+//     super.initState();
+//   }
+// }

@@ -1,4 +1,4 @@
-Milad Jalali Personal Website
+Enobong Ndedde Personal Website
 
 
 # Flutter Responsive Personal Website With GetX

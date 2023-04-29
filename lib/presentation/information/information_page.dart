@@ -15,13 +15,13 @@ class InformationPage extends GetResponsiveView<InformationController> {
 
   @override
   Widget desktop() {
-    return Scaffold(
+    return  Scaffold(
       body: Obx(() => Container(
             width: Get.width,
             height: Get.height,
             child: Stack(
               children: [
-                CustomPaint(painter: HomeBackgroundPainter(Colors.lightBlue), size: Size.infinite),
+                CustomPaint(painter: HomeBackgroundPainter( Color(0XFF003140)), size: Size.infinite),
                 Row(
                   children: [
                     Expanded(
@@ -40,7 +40,7 @@ class InformationPage extends GetResponsiveView<InformationController> {
                                 'Hello ... My name is',
                                 animate: !controller.helloSeen.value,
                                 textStyle: TextStyle(
-                                  color: Colors.lightBlue,
+                                  color: Color(0XFF003140),
                                   fontSize: 24,
                                   fontWeight: FontWeight.w700,
                                   letterSpacing: 1.4,
@@ -54,7 +54,7 @@ class InformationPage extends GetResponsiveView<InformationController> {
                               if (controller.showName.value) ...[
                                 SizedBox(height: 16),
                                 Typewriter(
-                                  'Milad Jalali',
+                                  'Enobong Ndedde',
                                   animate: !controller.nameSeen.value,
                                   textStyle: TextStyle(
                                     color: Colors.blueGrey[900],
@@ -72,7 +72,7 @@ class InformationPage extends GetResponsiveView<InformationController> {
                               if (controller.showPosition.value) ...[
                                 SizedBox(height: 16),
                                 Typewriter(
-                                  'Mobile App Developer & UI/UX Designer',
+                                  'Mobile App Developer & Web Developer',
                                   animate: !controller.positionSeen.value,
                                   textStyle: TextStyle(
                                     color: Colors.blueGrey[900],
@@ -89,9 +89,12 @@ class InformationPage extends GetResponsiveView<InformationController> {
                               if (controller.showAbstract.value) ...[
                                 SizedBox(height: 24),
                                 Typewriter(
-                                  "I build neat, cool and scalable mobile apps with Flutter and I'm an aspiring UI-UX Designer.\n"
-                                  'I love to learn and build new stuff that are beneficial to the community and cool to work on.\n'
-                                  'I also have great interest in the open source community.',
+                                 "Enthusiastic and passionate Mobile software developer, with years of experience developing\n"
+                                   'native Android applications using Kotlin and Java and as well as Cross-Platform mobile\n' 
+                                   'applications with Flutter. I am dedicated to continuous self-improvement and learning new \n'
+                                   'concepts and tools to ease engineering and increase my productivity. I love the challenges\n' 
+                                   "that comes with being a software engineer and the thrill of providingvalue to people around me.\n",
+                                
                                   animate: !controller.abstractSeen.value,
                                   textStyle: TextStyle(
                                     color: Colors.grey,
@@ -100,23 +103,23 @@ class InformationPage extends GetResponsiveView<InformationController> {
                                     height: 1.3,
                                   ),
                                   onEnd: () {
-                                    Future.delayed(Duration(milliseconds: 500), () {
-                                      controller.showHireMe.value = true;
-                                      controller.abstractSeen.value = true;
-                                      controller.update();
-                                    });
+                                    // Future.delayed(Duration(milliseconds: 500), () {
+                                    //   controller.showHireMe.value = true;
+                                    //   controller.abstractSeen.value = true;
+                                    //   controller.update();
+                                    // });
                                   },
                                 ),
                               ],
-                              if (controller.showHireMe.value) ...[
-                                SizedBox(height: 30),
-                                SizedBox(
-                                  width: 160,
-                                  child: RoundedButton("Hire Me",Colors.orange,Colors.orange,Colors.white,(){
-                                    UrlHelper.launchUrl("mailto:miladjalali.dev@gmail.com");
-                                  }),
-                                ),
-                              ],
+                              // if (controller.showHireMe.value) ...[
+                              //   SizedBox(height: 30),
+                              //   SizedBox(
+                              //     width: 160,
+                              //     child: RoundedButton("Hire Me",Colors.orange,Colors.orange,Colors.white,(){
+                              //       UrlHelper.launchUrl("mailto:miladjalali.dev@gmail.com");
+                              //     }),
+                              //   ),
+                              // ],
                             ],
                           ),
                         ),
@@ -144,7 +147,7 @@ class InformationPage extends GetResponsiveView<InformationController> {
             height: Get.height,
             child: Stack(
               children: [
-                CustomPaint(painter: HomeBackgroundPainterForMobile(Colors.lightBlue), size: Size.infinite),
+                CustomPaint(painter: HomeBackgroundPainterForMobile(Color(0XFF003140)), size: Size.infinite),
                 Center(
                   child: Column(
                     children: [
@@ -174,7 +177,7 @@ class InformationPage extends GetResponsiveView<InformationController> {
                                     'Hello ... My name is',
                                     animate: !controller.helloSeen.value,
                                     textStyle: TextStyle(
-                                      color: Colors.lightBlue,
+                                      color: Color(0XFF003140),
                                       fontSize: 24,
                                       fontWeight: FontWeight.w700,
                                       letterSpacing: 1.4,
@@ -188,7 +191,7 @@ class InformationPage extends GetResponsiveView<InformationController> {
                                   if (controller.showName.value) ...[
                                     SizedBox(height: 16),
                                     Typewriter(
-                                      'Milad Jalali',
+                                      'Enobong Ndedde',
                                       animate: !controller.nameSeen.value,
                                       textStyle: TextStyle(
                                         color: Colors.blueGrey[900],
@@ -206,7 +209,7 @@ class InformationPage extends GetResponsiveView<InformationController> {
                                   if (controller.showPosition.value) ...[
                                     SizedBox(height: 16),
                                     Typewriter(
-                                      'Mobile App Developer & UI/UX Designer',
+                                      'Mobile App Developer & Web Developer',
                                       animate: !controller.positionSeen.value,
                                       textStyle: TextStyle(
                                         color: Colors.blueGrey[900],
@@ -223,9 +226,11 @@ class InformationPage extends GetResponsiveView<InformationController> {
                                   if (controller.showAbstract.value) ...[
                                     SizedBox(height: 24),
                                     Typewriter(
-                                      "I build neat, cool and scalable mobile apps with Flutter and I'm an aspiring UI-UX Designer.\n"
-                                      'I love to learn and build new stuff that are beneficial to the community and cool to work on.\n'
-                                      'I also have great interest in the open source community.',
+                                     "Enthusiastic and passionate Mobile software developer, with years of experience developing\n"
+                                   'native Android applications using Kotlin and Java and as well as Cross-Platform mobile\n' 
+                                   'applications with Flutter. I am dedicated to continuous self-improvement and learning new \n'
+                                   'concepts and tools to ease engineering and increase my productivity. I love the challenges\n' 
+                                   "that comes with being a software engineer and the thrill of providingvalue to people around me.\n",
                                       animate: !controller.abstractSeen.value,
                                       textStyle: TextStyle(
                                         color: Colors.grey,
@@ -234,51 +239,15 @@ class InformationPage extends GetResponsiveView<InformationController> {
                                         height: 1.3,
                                       ),
                                       onEnd: () {
-                                        Future.delayed(Duration(milliseconds: 500), () {
-                                          controller.showHireMe.value = true;
-                                          controller.abstractSeen.value = true;
-                                          controller.update();
-                                        });
+                                        // Future.delayed(Duration(milliseconds: 500), () {
+                                        //   controller.showHireMe.value = true;
+                                        //   controller.abstractSeen.value = true;
+                                        //   controller.update();
+                                        // });
                                       },
                                     ),
                                   ],
-                                  if (controller.showHireMe.value) ...[
-                                    SizedBox(height: 30),
-                                    InkWell(
-                                      hoverColor: Colors.transparent,
-                                      splashColor: Colors.transparent,
-                                      onTap: () {
-                                        UrlHelper.launchUrl("mailto:miladjalali.dev@gmail.com");
-                                      },
-                                      onHover: (value) {
-                                        controller.hovered.value = value;
-                                        controller.update();
-                                      },
-                                      child: AnimatedContainer(
-                                        height: 50,
-                                        width: 160,
-                                        duration: kThemeAnimationDuration,
-                                        alignment: Alignment.center,
-                                        decoration: BoxDecoration(
-                                          border: Border.all(width: 1.4, color: Colors.teal),
-                                          borderRadius: BorderRadius.all(Radius.circular(50)),
-                                          color: controller.hovered.value ? Colors.teal.withOpacity(1.0) : Colors.transparent,
-                                        ),
-                                        child: AnimatedDefaultTextStyle(
-                                          duration: kThemeAnimationDuration,
-                                          style: TextStyle(
-                                            color: controller.hovered.value ? Colors.white : Colors.teal,
-                                            fontSize: 17,
-                                            fontWeight: FontWeight.w500,
-                                            fontFamily: 'Ubuntu',
-                                          ),
-                                          child: Text(
-                                            'Hire Me',
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                  ],
+                                  
                                 ],
                               ),
                             ),

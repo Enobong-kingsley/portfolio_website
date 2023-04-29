@@ -15,7 +15,7 @@ class App extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: Themes.themeBlueOrange,
       scrollBehavior: WebScrollBehavior(),
-      title: "Milad Jalali | Developer, Designer and Teacher",
+      title: "Enobong Ndedde | Developer, Designer and Teacher",
       home: HomePage(),
     );
   }
